@@ -11,8 +11,8 @@ class App extends Component {
   render() {
     return (<div className="App">
         <UserInput />
-        <UserOutput username={this.state.username}/>
-        <UserOutput username={this.state.username}/>
+        <UserOutput username={this.state.username}>My password is: password</UserOutput>
+        <UserOutput username={this.state.username}>My password is: pwd</UserOutput>
 
         <ol>
           <li>Create TWO new components: UserInput and UserOutput</li>
