@@ -4,11 +4,15 @@ import UserInput from './UserInput/UserInput';
 import UserOutput from './UserOutput/UserOutput';
 
 class App extends Component {
+  state = {
+    username: 'Gaëtan'
+  };
+
   render() {
     return (<div className="App">
         <UserInput />
-        <UserOutput username="Gaëtan"/>
-        <UserOutput username="Sebastien"/>
+        <UserOutput username={this.state.username}/>
+        <UserOutput username={this.state.username}/>
 
         <ol>
           <li>Create TWO new components: UserInput and UserOutput</li>
