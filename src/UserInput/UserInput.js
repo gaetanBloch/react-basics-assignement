@@ -5,3 +5,5 @@ const UserInput = () => {
     <input type="text"/>
   );
 };
+
+export default UserInput;
