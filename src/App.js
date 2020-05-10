@@ -8,9 +8,15 @@ class App extends Component {
     username: 'Gaëtan'
   };
 
+  changeUsernameHandler = event => {
+    this.setState({
+      username: event.target.value
+    });
+  };
+
   render() {
     return (<div className="App">
-        <UserInput />
+        <UserInput changeUsername={this.changeUsernameHandler}/>
         <UserOutput username={this.state.username}>My password is: password</UserOutput>
         <UserOutput username={this.state.username}>My password is: pwd</UserOutput>
 
