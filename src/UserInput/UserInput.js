@@ -1,8 +1,16 @@
 import React from 'react';
 
 const UserInput = (props) => {
+  const style = {
+    border: '2px solid blue'
+  };
+
   return (
-    <input type="text" onChange={props.changeUsername} defaultValue={props.username}/>
+    <input
+      type="text"
+      style={style}
+      onChange={props.usernameChanged}
+      defaultValue={props.username}/>
   );
 };
 

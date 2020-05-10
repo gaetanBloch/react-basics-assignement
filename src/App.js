@@ -16,10 +16,6 @@ class App extends Component {
 
   render() {
     return (<div className="App">
-        <UserInput changeUsername={this.changeUsernameHandler} username={this.state.username}/>
-        <UserOutput username={this.state.username}>My password is: password</UserOutput>
-        <UserOutput username={this.state.username}>My password is: pwd</UserOutput>
-
         <ol>
           <li>Create TWO new components: UserInput and UserOutput</li>
           <li>UserInput should hold an input element, UserOutput two paragraphs</li>
@@ -44,6 +40,10 @@ class App extends Component {
             inline styles and stylesheets
           </li>
         </ol>
+        <hr/>
+        <UserInput usernameChanged={this.changeUsernameHandler} username={this.state.username}/>
+        <UserOutput username={this.state.username}>My password is: password</UserOutput>
+        <UserOutput username="Sebastien">My password is: pwd</UserOutput>
       </div>
     )
   };
